@@ -15,10 +15,6 @@ export function ensureAuthenticated(request: Request, response: Response, next: 
         })
     }
 
-    // Bearer 3210301230as0d0addasd123
-    // [0] Bearer
-    // [1] 3210301230as0d0addasd123
-
     const [,token] = authToken.split(" ")
 
     try {
